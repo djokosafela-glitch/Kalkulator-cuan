@@ -1,4 +1,14 @@
 import streamlit as st
+# Kode untuk menyembunyikan ikon GitHub dan Menu Streamlit
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            .viewerBadge_container__1QS13 {display: none;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # Pengaturan Judul & Tema
 st.set_page_config(page_title="Kalkulator Cuan & HPP", page_icon="💰")
